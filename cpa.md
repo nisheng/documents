@@ -4,9 +4,9 @@
 
 代码嵌入到页面中，尽量靠前
 
-<script
-src="//oss.ltcdn.cc/monitor/formal/js/monitor_btm.js"
-type="text/javascript"></script>
+```
+<script src="//oss.ltcdn.cc/monitor/formal/js/monitor_btm.js"></script>
+```
 
 
 
