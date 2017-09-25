@@ -39,10 +39,10 @@ data:{
 success:function(data){
     //在接口回调中添加，保证数据正确                     
         monitor_btm_btm.request({
-        type:"post",
-        url:monitor_btm.data_url,
-        data:monitor_btm.url_parameter,
-        success:function(){}
+          type:"post",
+          url:monitor_btm.data_url,
+          data:monitor_btm.url_parameter,
+          success:function(){}
         })
 	}
 })
