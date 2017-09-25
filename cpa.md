@@ -46,7 +46,6 @@ success:function(data){
         })
 	}
 })
-
 ```
 
 
@@ -56,4 +55,12 @@ success:function(data){
 `本地测试`的时候页面链接必须含有`monitor`这个参数，这样统计代码才能生效。
 
 这个参数上线后走百泰广告会默认带上。
+
+
+
+如果成功会发送一个http://game.ltyun.cc/api/1.0/h5/cpa/accept/action post请求，
+
+注意进入页面的时候就会默认请求一次统计曝光，这个请求会带上参数exposure
+
+
 
