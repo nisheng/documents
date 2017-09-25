@@ -37,7 +37,7 @@ data:{
     //传输数据
 },
 success:function(data){
-    /在接口回调中添加，保证数据正确                     
+    //在接口回调中添加，保证数据正确                     
         monitor_btm_btm.request({
         type:"post",
         url:monitor_btm.data_url,
