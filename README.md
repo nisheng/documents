@@ -1,6 +1,6 @@
 # 前端文档系统
 
-访问地址：http://front.vkitty.org/
+访问地址：http://front-docs.adbaitai.com/
 
 git地址：https://code.aliyun.com/laitui-web/front-docs
 
