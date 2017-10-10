@@ -16,5 +16,5 @@ git地址：https://code.aliyun.com/laitui-web/front-docs
 
 规范方案
 
-工作业务s
+工作业务
 
