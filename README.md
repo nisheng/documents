@@ -12,9 +12,9 @@ git地址：https://code.aliyun.com/laitui-web/front-docs
 
 ### 类目
 
-经验分享
+教程培训
 
-技术日子
+规范方案
 
-流程规范
+工作业务s
 
