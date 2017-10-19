@@ -2,47 +2,26 @@
 
 \# charles mac版手机抓包
 
-\> 维护者：付东光
-
-\* [官网](#官网)
-
-\* [安装设置](#安装设置)
-
-\* [手机抓包设置](#链接设置)
-
-\* [抓包分析](#抓包分析)
-
- * [overview](#overview)
-
- * [request](#request)z
-
- * [response](#response)
-
-\* [高级功能](#高级功能)
-
- * [禁止缓存](#禁止缓存)
-
- * [禁止cookie](#禁止cookie)
-
- * [远程映射](#远程映射)
-
-  * [设置](#远程映射)
-
-  * [查看远程映射记录](#查看远程映射记录)
-
-  * [远程映射非常有用](#远程映射非常有用)
-
- * [断点](#断点)
-
+* [官网](#官网)
+*  [安装设置](#安装设置)
+*  [手机抓包设置](#链接设置)
+*  [抓包分析](#抓包分析)
+  *  [overview](#overview) 
+  * [request](#request)
+  *  [response](#response)
+* [高级功能](#高级功能)
+  *  [禁止缓存](#禁止缓存)
+  *  [禁止cookie](#禁止cookie)
+  *  [远程映射](#远程映射)
+    *  [设置](#远程映射)
+    *  [查看远程映射记录](#查看远程映射记录)
+    * [远程映射非常有用](#远程映射非常有用)
+* [断点](#断点)
   * [重要作用](#重要作用)
-
-  * [设置](#设置)
-
+  *  [设置](#设置)
   * [使用示例，request修改cookie](#使用示例，request修改cookie)
-
-\* [https抓包](#https抓包)
-
-\* [其它功能](#其它功能)
+* [https抓包](#https抓包)
+* [其它功能](#其它功能)
 
 <h3 id="官网">官网</h3>
 
@@ -58,17 +37,17 @@
 
  点击proxy->MAC OS X proxy
 
-< img src="<http://wd.geilicdn.com/5302846b55bfdd37e50cdffa911baaa1.png>" style="max-width:100%;width:550px;"/>
+< img src="http://wd.geilicdn.com/5302846b55bfdd37e50cdffa911baaa1.png" style="max-width:100%;width:550px;"/>
 
  
 
 <h3 id="链接设置">链接设置</h3>
 
-< img src="<http://wd.geilicdn.com/9c9a8999f37e0dcb1a693b055072d8c3.jpg>" style="max-width:100%;width:350px;"/>
+< img src="http://wd.geilicdn.com/9c9a8999f37e0dcb1a693b055072d8c3.jpg" style="max-width:100%;width:350px;"/>
 
  ifconfig 找到电脑ip 服务器填电脑ip 端口默认8888（下图）
 
-< img src="<http://wd.geilicdn.com/7329b383030de145c512450f811debb3.jpg>" style="max-width:100%;width:350px;"/>
+< img src="http://wd.geilicdn.com/7329b383030de145c512450f811debb3.jpg" style="max-width:100%;width:350px;"/>
 
  此时charles会自动弹出对话问是否允许通过chales代理访问。点击allow。如果想默认允许任何用户访问， 打开 面包Setting->Access Control Settings面板，点击add按钮 增加 <0.0.0.0>/0，以后就不会有该对话了。
 
