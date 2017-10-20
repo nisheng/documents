@@ -6,3 +6,7 @@
 cat /var/log/nginx/access.log | grep 123.179.118.160
 ```
 
+```shell
+lsof -i:8080
+```
+
