@@ -2,7 +2,7 @@
 
 访问地址：http://front-docs.adbaitai.com/
 
-git地址：https://code.aliyun.com/laitui-web/front-docs
+git地址：git@code.aliyun.com:laitui-web/front-docs.git
 
 使用方式：修改完成后push到git服务器，自动完成编译，也可以在线编辑
 
