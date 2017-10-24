@@ -6,7 +6,7 @@
 
 ####2.怎么做
 
-* 1.检查设备是否支持webp格式图片
+* 检查设备是否支持webp格式图片
 
   ```javascript
   function check_webp_feature(feature, callback) {
@@ -31,13 +31,13 @@
 
   反之，如果进入了onerror中，说明该设备不支持
 
-* 2.将传统图片转为webp图片
+* 将传统图片转为webp图片，阿里云cdn已经支持，在原来地址后面加上参数`x-oss-process=image/format,webp`
 
   ```javascript
   //png格式图片
   http://static.adbaitai.com/cow/2017/07/12/750w_359h_82B5E1499847409_origin.png 
   //webp格式图片
-  http://static.adbaitai.com/cow/2017/07/12/750w_359h_82B5E1499847409_origin.png ?x-oss-process=image/format,webp
+  http://static.adbaitai.com/cow/2017/07/12/750w_359h_82B5E1499847409_origin.png?x-oss-process=image/format,webp
   ```
 
   ​
