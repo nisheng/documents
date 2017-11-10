@@ -14,6 +14,7 @@
   * [titan数据库设计](工作业务/titan数据库设计.md)
 * 教程培训
   - [webpack学习笔记](教程培训/webpack学习笔记.md)
+  - [webpack解惑篇](教程培训/webpack解惑篇.md)
   - [linux笔记](教程培训/linux笔记.md)
   - [charles教程](教程培训/charles教程.md)
 
