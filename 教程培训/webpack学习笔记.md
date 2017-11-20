@@ -17,6 +17,7 @@ gulp.task('dev',function(){
         hot: false,
         inline: true,
         compress: true,
+      	disableHostCheck:true, //注意这个 对 host header 的正确性检测
       	historyApiFallback: true,//在开发单页应用时非常有用，它依赖于HTML5 history API，如果设置为true，所有的跳转将指向index.html
         stats: {
             chunks: false,
