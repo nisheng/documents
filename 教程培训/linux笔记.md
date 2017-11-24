@@ -4,9 +4,9 @@
 
 ```shell
 cat /var/log/nginx/access.log | grep 123.179.118.160
+tail -f  /var/log/nginx/access.log |grep adshare/list 
 ```
 
 ```shell
 lsof -i:8080
 ```
-
