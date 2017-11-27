@@ -10,3 +10,4 @@ tail -f  /var/log/nginx/access.log |grep adshare/list
 ```shell
 lsof -i:8080
 ```
+
