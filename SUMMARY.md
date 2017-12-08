@@ -18,5 +18,5 @@
   - [webpack解惑篇](教程培训/webpack解惑篇.md)
   - [linux笔记](教程培训/linux笔记.md)
   - [charles教程](教程培训/charles教程.md)
-  - [ICON-svg的实现形式](教程培训/c.md)
+  - [ICON-svg的实现形式](教程培训/ICON-svg的实现形式.md)
 
