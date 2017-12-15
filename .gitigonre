@@ -1,3 +1,12 @@
+node_modules
+.DS_Store
 .idea/
-_book/
-node_modules/
+.vscode
+npm-debug.log
+dist/
+*ini
+*.iml
+*.jar
+*.war
+*.zip
+*.tmp
