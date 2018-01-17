@@ -21,4 +21,5 @@
   - [charles教程](教程培训/charles教程.md)
   - [ICON-svg的实现形式](教程培训/ICON-svg的实现形式.md)
   - [前端页面错误监控系统](教程培训/监控系统.md)
+  - [img上报数据延伸的ajax跨域](教程培训/ajax跨域.md)
 
