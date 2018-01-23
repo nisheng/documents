@@ -1,0 +1,591 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>webpack学习笔记 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="webpack解惑篇.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    规范方案
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../规范方案/前端发布系统使用.html">
+            
+                <a href="../规范方案/前端发布系统使用.html">
+            
+                    
+                    前端发布系统使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../规范方案/前端发布系统技术方案.html">
+            
+                <a href="../规范方案/前端发布系统技术方案.html">
+            
+                    
+                    前端发布系统技术方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../规范方案/优化方案.html">
+            
+                <a href="../规范方案/优化方案.html">
+            
+                    
+                    优化方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../规范方案/前端业务.html">
+            
+                <a href="../规范方案/前端业务.html">
+            
+                    
+                    前端业务及规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../规范方案/git规范.html">
+            
+                <a href="../规范方案/git规范.html">
+            
+                    
+                    git规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../规范方案/gitignore.html">
+            
+                <a href="../规范方案/gitignore.html">
+            
+                    
+                    .gitignore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../规范方案/图片转webp.html">
+            
+                <a href="../规范方案/图片转webp.html">
+            
+                    
+                    图片转webp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../规范方案/通用组件规范.html">
+            
+                <a href="../规范方案/通用组件规范.html">
+            
+                    
+                    通用组件规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    工作业务
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../工作业务/告警监控系统升级.html">
+            
+                <a href="../工作业务/告警监控系统升级.html">
+            
+                    
+                    告警监控系统升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../工作业务/titan数据库设计.html">
+            
+                <a href="../工作业务/titan数据库设计.html">
+            
+                    
+                    titan数据库设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../工作业务/落地页数据收集.html">
+            
+                <a href="../工作业务/落地页数据收集.html">
+            
+                    
+                    落地页数据收集
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    教程培训
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="webpack学习笔记.html">
+            
+                <a href="webpack学习笔记.html">
+            
+                    
+                    webpack学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="webpack解惑篇.html">
+            
+                <a href="webpack解惑篇.html">
+            
+                    
+                    webpack解惑篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="linux笔记.html">
+            
+                <a href="linux笔记.html">
+            
+                    
+                    linux笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="charles教程.html">
+            
+                <a href="charles教程.html">
+            
+                    
+                    charles教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="ICON-svg的实现形式.html">
+            
+                <a href="ICON-svg的实现形式.html">
+            
+                    
+                    ICON-svg的实现形式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="监控系统.html">
+            
+                <a href="监控系统.html">
+            
+                    
+                    前端页面错误监控系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="ajax跨域.html">
+            
+                <a href="ajax跨域.html">
+            
+                    
+                    ajax跨域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="为何图片经过OSS缩略之后尺寸变大了.html">
+            
+                <a href="为何图片经过OSS缩略之后尺寸变大了.html">
+            
+                    
+                    为何图片经过OSS缩略之后尺寸变大了
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >webpack学习笔记</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="webpack&#x5B66;&#x4E60;&#x7B14;&#x8BB0;">webpack&#x5B66;&#x4E60;&#x7B14;&#x8BB0;</h2>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> gulp = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;gulp&apos;</span>);
+<span class="hljs-keyword">const</span> webpack = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;webpack&quot;</span>);
+<span class="hljs-keyword">var</span> config = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./webpack.config.js&apos;</span>);
+<span class="hljs-keyword">var</span> WebpackDevServer = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;webpack-dev-server&quot;</span>);
+<span class="hljs-keyword">const</span> baseDir = __dirname;
+
+<span class="hljs-keyword">var</span> compiler = webpack(config);
+
+gulp.task(<span class="hljs-string">&apos;dev&apos;</span>,<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-comment">//&#x8FD9;&#x4E2A;&#x5730;&#x65B9;&#x4E00;&#x5B9A;&#x8981;&#x52A0;new</span>
+    <span class="hljs-comment">//&#x8981;&#x4E0D;&#x7136;&#x4F1A;&#x51FA;&#x73B0; this.sockwrite is not a function</span>
+    <span class="hljs-keyword">var</span> server =<span class="hljs-keyword">new</span> WebpackDevServer(compiler, {
+        contentBase: __dirname+<span class="hljs-string">&apos;/build&apos;</span>,
+        hot: <span class="hljs-literal">false</span>,
+        inline: <span class="hljs-literal">true</span>,
+        compress: <span class="hljs-literal">true</span>,
+          disableHostCheck:<span class="hljs-literal">true</span>, <span class="hljs-comment">//&#x6CE8;&#x610F;&#x8FD9;&#x4E2A; &#x5BF9; host header &#x7684;&#x6B63;&#x786E;&#x6027;&#x68C0;&#x6D4B;</span>
+          historyApiFallback: <span class="hljs-literal">true</span>,<span class="hljs-comment">//&#x5728;&#x5F00;&#x53D1;&#x5355;&#x9875;&#x5E94;&#x7528;&#x65F6;&#x975E;&#x5E38;&#x6709;&#x7528;&#xFF0C;&#x5B83;&#x4F9D;&#x8D56;&#x4E8E;HTML5 history API&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;true&#xFF0C;&#x6240;&#x6709;&#x7684;&#x8DF3;&#x8F6C;&#x5C06;&#x6307;&#x5411;index.html</span>
+        stats: {
+            chunks: <span class="hljs-literal">false</span>,
+            children: <span class="hljs-literal">false</span>,
+            colors: <span class="hljs-literal">true</span>
+        }
+    });
+
+    server.listen(<span class="hljs-number">8080</span>, <span class="hljs-string">&quot;localhost&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{});
+});
+<span class="hljs-comment">//webpack.config.js</span>
+<span class="hljs-keyword">const</span> config = {
+    entry:<span class="hljs-string">&apos;./src/app.js&apos;</span>,
+    output:{
+        filename:<span class="hljs-string">&quot;bundle.js&quot;</span>,
+        path:__dirname+<span class="hljs-string">&quot;/build&quot;</span>
+    },
+    <span class="hljs-built_in">module</span>:{
+        loaders:[
+            {
+                test: <span class="hljs-regexp">/\.js$/</span>,
+                exclude: <span class="hljs-regexp">/(node_modules|bower_components)/</span>,
+                loader: <span class="hljs-string">&apos;babel-loader&apos;</span>,
+                query: {
+                    presets: [<span class="hljs-string">&apos;es2015&apos;</span>,<span class="hljs-string">&apos;react&apos;</span>]
+                }
+            }
+        ]
+    }
+};
+<span class="hljs-built_in">module</span>.exports = config;
+</code></pre>
+<h2 id="&#x5982;&#x4F55;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x63D2;&#x4EF6;">&#x5982;&#x4F55;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x63D2;&#x4EF6;</h2>
+<pre><code class="lang-json">{
+    test: <span class="hljs-regexp">/\.*$/</span>,
+    exclude: <span class="hljs-regexp">/node_modules/</span>,<span class="hljs-comment">//&#x5C4F;&#x853D;&#x4E0D;&#x9700;&#x8981;&#x5904;&#x7406;&#x7684;&#x6587;&#x4EF6;&#xFF08;&#x6587;&#x4EF6;&#x5939;&#xFF09;&#xFF08;&#x53EF;&#x9009;&#xFF09;</span>
+    loader: <span class="hljs-string">&apos;test-loader&apos;</span><span class="hljs-comment">//loader&#x7684;&#x540D;&#x79F0;&#xFF08;&#x5FC5;&#x987B;&#xFF09;</span>
+}
+</code></pre>
+<p>&#x5728;node_modules&#x521B;&#x5EFA;test-loader &#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x8F93;&#x5165;index.js</p>
+<p>test-loader/index.js</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">module</span>.exports=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">content</span>)</span>{
+    content = content.replace(<span class="hljs-string">&apos;aaa&apos;</span>,<span class="hljs-string">&apos;bbb&apos;</span>);
+    <span class="hljs-keyword">return</span> content;
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="webpack解惑篇.html" class="navigation navigation-next navigation-unique" aria-label="Next page: webpack解惑篇">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"webpack学习笔记","level":"1.4.1","depth":2,"next":{"title":"webpack解惑篇","level":"1.4.2","depth":2,"path":"教程培训/webpack解惑篇.md","ref":"教程培训/webpack解惑篇.md","articles":[]},"previous":{"title":"教程培训","level":"1.4","depth":1,"ref":"","articles":[{"title":"webpack学习笔记","level":"1.4.1","depth":2,"path":"教程培训/webpack学习笔记.md","ref":"教程培训/webpack学习笔记.md","articles":[]},{"title":"webpack解惑篇","level":"1.4.2","depth":2,"path":"教程培训/webpack解惑篇.md","ref":"教程培训/webpack解惑篇.md","articles":[]},{"title":"linux笔记","level":"1.4.3","depth":2,"path":"教程培训/linux笔记.md","ref":"教程培训/linux笔记.md","articles":[]},{"title":"charles教程","level":"1.4.4","depth":2,"path":"教程培训/charles教程.md","ref":"教程培训/charles教程.md","articles":[]},{"title":"ICON-svg的实现形式","level":"1.4.5","depth":2,"path":"教程培训/ICON-svg的实现形式.md","ref":"教程培训/ICON-svg的实现形式.md","articles":[]},{"title":"前端页面错误监控系统","level":"1.4.6","depth":2,"path":"教程培训/监控系统.md","ref":"教程培训/监控系统.md","articles":[]},{"title":"ajax跨域","level":"1.4.7","depth":2,"path":"教程培训/ajax跨域.md","ref":"教程培训/ajax跨域.md","articles":[]},{"title":"为何图片经过OSS缩略之后尺寸变大了","level":"1.4.8","depth":2,"path":"教程培训/为何图片经过OSS缩略之后尺寸变大了.md","ref":"教程培训/为何图片经过OSS缩略之后尺寸变大了.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"教程培训/webpack学习笔记.md","mtime":"2018-01-23T05:10:44.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-23T05:13:30.214Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

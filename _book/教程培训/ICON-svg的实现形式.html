@@ -1,0 +1,718 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ICON-svg的实现形式 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="监控系统.html" />
+    
+    
+    <link rel="prev" href="charles教程.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    规范方案
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../规范方案/前端发布系统使用.html">
+            
+                <a href="../规范方案/前端发布系统使用.html">
+            
+                    
+                    前端发布系统使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../规范方案/前端发布系统技术方案.html">
+            
+                <a href="../规范方案/前端发布系统技术方案.html">
+            
+                    
+                    前端发布系统技术方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../规范方案/优化方案.html">
+            
+                <a href="../规范方案/优化方案.html">
+            
+                    
+                    优化方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../规范方案/前端业务.html">
+            
+                <a href="../规范方案/前端业务.html">
+            
+                    
+                    前端业务及规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../规范方案/git规范.html">
+            
+                <a href="../规范方案/git规范.html">
+            
+                    
+                    git规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../规范方案/gitignore.html">
+            
+                <a href="../规范方案/gitignore.html">
+            
+                    
+                    .gitignore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../规范方案/图片转webp.html">
+            
+                <a href="../规范方案/图片转webp.html">
+            
+                    
+                    图片转webp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../规范方案/通用组件规范.html">
+            
+                <a href="../规范方案/通用组件规范.html">
+            
+                    
+                    通用组件规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    工作业务
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../工作业务/告警监控系统升级.html">
+            
+                <a href="../工作业务/告警监控系统升级.html">
+            
+                    
+                    告警监控系统升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../工作业务/titan数据库设计.html">
+            
+                <a href="../工作业务/titan数据库设计.html">
+            
+                    
+                    titan数据库设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../工作业务/落地页数据收集.html">
+            
+                <a href="../工作业务/落地页数据收集.html">
+            
+                    
+                    落地页数据收集
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    教程培训
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="webpack学习笔记.html">
+            
+                <a href="webpack学习笔记.html">
+            
+                    
+                    webpack学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="webpack解惑篇.html">
+            
+                <a href="webpack解惑篇.html">
+            
+                    
+                    webpack解惑篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="linux笔记.html">
+            
+                <a href="linux笔记.html">
+            
+                    
+                    linux笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="charles教程.html">
+            
+                <a href="charles教程.html">
+            
+                    
+                    charles教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.5" data-path="ICON-svg的实现形式.html">
+            
+                <a href="ICON-svg的实现形式.html">
+            
+                    
+                    ICON-svg的实现形式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="监控系统.html">
+            
+                <a href="监控系统.html">
+            
+                    
+                    前端页面错误监控系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="ajax跨域.html">
+            
+                <a href="ajax跨域.html">
+            
+                    
+                    ajax跨域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="为何图片经过OSS缩略之后尺寸变大了.html">
+            
+                <a href="为何图片经过OSS缩略之后尺寸变大了.html">
+            
+                    
+                    为何图片经过OSS缩略之后尺寸变大了
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >ICON-svg的实现形式</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="icon">ICON</h1>
+<p><img src="http://ww1.sinaimg.cn/large/005QDhBjgy1fm9eyxaehkj30zc0fe45l.jpg" alt=""></p>
+<p>&#x9996;&#x5148;&#x6211;&#x4EEC;&#x6765;&#x8BF4;&#x4E00;&#x4E0B;&#x524D;&#x7AEF; icon &#x7684;&#x53D1;&#x5C55;&#x53F2;&#x3002;</p>
+<p><strong>&#x8FDC;&#x53E4;&#x65F6;&#x4EE3;</strong>
+&#x5728;&#x6211;&#x521A;&#x5F00;&#x59CB;&#x5B9E;&#x4E60;&#x65F6;&#xFF0C;&#x5927;&#x90E8;&#x5206;&#x56FE;&#x6807;&#x90FD;&#x662F;&#x7528; img &#x6765;&#x5B9E;&#x73B0;&#x7684;&#x3002;&#x6E10;&#x6E10;&#x53D1;&#x73B0;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x7684;&#x8BF7;&#x6C42;&#x8D44;&#x6E90;&#x4E2D;&#x56FE;&#x7247; img &#x5360;&#x4E86;&#x5927;&#x90E8;&#x5206;&#xFF0C;&#x6240;&#x4EE5;&#x4E3A;&#x4E86;&#x4F18;&#x5316;&#x6709;&#x4E86;<code>image sprite</code> &#x5C31;&#x662F;&#x6240;&#x8C13;&#x7684;&#x96EA;&#x78A7;&#x56FE;&#xFF0C;&#x5C31;&#x662F;&#x5C06;&#x591A;&#x4E2A;&#x56FE;&#x7247;&#x5408;&#x6210;&#x4E00;&#x4E2A;&#x56FE;&#x7247;&#xFF0C;&#x7136;&#x540E;&#x5229;&#x7528; css &#x7684; background-position &#x5B9A;&#x4F4D;&#x663E;&#x793A;&#x4E0D;&#x540C;&#x7684; icon &#x56FE;&#x6807;&#x3002;&#x4F46;&#x8FD9;&#x4E2A;&#x4E5F;&#x6709;&#x4E00;&#x4E2A;&#x5F88;&#x5927;&#x7684;&#x75DB;&#x70B9;&#xFF0C;&#x7EF4;&#x62A4;&#x56F0;&#x96BE;&#x3002;&#x6BCF;&#x65B0;&#x589E;&#x4E00;&#x4E2A;&#x56FE;&#x6807;&#xFF0C;&#x90FD;&#x9700;&#x8981;&#x6539;&#x52A8;&#x539F;&#x59CB;&#x56FE;&#x7247;&#xFF0C;&#x8FD8;&#x53EF;&#x80FD;&#x4E0D;&#x5C0F;&#x5FC3;&#x51FA;&#x9519;&#x5F71;&#x54CD;&#x5230;&#x524D;&#x9762;&#x5B9A;&#x4F4D;&#x597D;&#x7684;&#x56FE;&#x7247;&#xFF0C;&#x800C;&#x4E14;&#x4E00;&#x4FEE;&#x6539;&#x96EA;&#x78A7;&#x56FE;&#xFF0C;&#x56FE;&#x7247;&#x7F13;&#x5B58;&#x5C31;&#x5931;&#x6548;&#x4E86;&#xFF0C;&#x4E45;&#x800C;&#x4E45;&#x4E4B;&#x4F60;&#x4E0D;&#x77E5;&#x9053;&#x8BE5;&#x600E;&#x4E48;&#x7EF4;&#x62A4;&#x4E86;&#x3002;</p>
+<p><strong>font &#x5E93;</strong>
+&#x540E;&#x6765;&#x6E10;&#x6E10;&#x5730;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x91CC;&#x51E0;&#x4E4E;&#x4E0D;&#x4F1A;&#x4F7F;&#x7528;&#x4EFB;&#x4F55;&#x672C;&#x5730;&#x7684;&#x56FE;&#x7247;&#x4E86;&#xFF0C;&#x800C;&#x4F7F;&#x7528;&#x4E00;&#x4E9B; font &#x5E93;&#x6765;&#x5B9E;&#x73B0;&#x9875;&#x9762;&#x56FE;&#x6807;&#x3002;&#x5E38;&#x89C1;&#x7684;&#x5982; <a href="https://link.juejin.im/?target=http%3A%2F%2Ffontawesome.io%2F" target="_blank">Font Awesome</a> &#xFF0C;&#x4F7F;&#x7528;&#x8D77;&#x6765;&#x4E5F;&#x975E;&#x5E38;&#x7684;&#x65B9;&#x4FBF;&#xFF0C;&#x4F46;&#x5B83;&#x6709;&#x4E00;&#x4E2A;&#x81F4;&#x547D;&#x7684;&#x7F3A;&#x70B9;&#x5C31;&#x662F;&#x627E;&#x8D77;&#x6765;&#x771F;&#x7684;&#x5F88;&#x4E0D;&#x65B9;&#x4FBF;&#xFF0C;&#x6BCF;&#x6B21;&#x627E;&#x4E00;&#x4E2A;&#x56FE;&#x6807;&#x7279;&#x522B;&#x7684;&#x8D39;&#x773C;&#x775B;&#xFF0C;&#x8FD8;&#x6709;&#x5C31;&#x662F;&#x5B83;&#x7684;&#x5B9A;&#x5236;&#x6027;&#x4E5F;&#x975E;&#x5E38;&#x7684;&#x4E0D;&#x53CB;&#x5584;&#xFF0C;&#x5B83;&#x7684;&#x56FE;&#x6807;&#x5E93;&#x4E00;&#x5171;&#x6709;675&#x4E2A;&#x56FE;&#x6807;&#xFF0C;&#x8BF4;&#x5C11;&#x4E5F;&#x4E0D;&#x5C11;&#xFF0C;&#x4F46;&#x8FD8;&#x662F;&#x4F1A;&#x5E38;&#x5E38;&#x51FA;&#x73B0;&#x627E;&#x4E0D;&#x5230;&#x4F60;&#x6240;&#x9700;&#x8981;&#x56FE;&#x6807;&#x7684;&#x60C5;&#x51B5;&#x3002;&#x5F53;&#x7136;&#x5BF9;&#x4E8E;&#x6CA1;&#x6709;&#x5565;&#x7279;&#x522B; ui &#x8FFD;&#x6C42;&#x7684;&#x521D;&#x521B;&#x516C;&#x53F8;&#x6765;&#x8BF4;&#x8FD8;&#x662F;&#x80FD;&#x5FCD;&#x4E00;&#x5FCD;&#x7684;&#x3002;&#x4F46;&#x968F;&#x7740;&#x516C;&#x53F8;&#x7684;&#x58EE;&#x5927;&#xFF0C;&#x6765;&#x4E86;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x5BF9;&#x524D;&#x7AEF;&#x6307;&#x624B;&#x753B;&#x811A;&#x7684;&#x4EBA;&#xFF0C;&#x4E27;&#x5FC3;&#x75C5;&#x72C2;&#x7684;&#x8BBE;&#x8BA1;&#x5E08;&#xFF0C;&#x4ED6;&#x4EEC;&#x4F1A;&#x8BF4;&#x4E0D;&#xFF01;&#x8FD9;icon&#x8FD9;&#x4E48;&#x4E11;&#xFF0C;&#x8FD9;&#x7B80;&#x76F4;&#x662F;&#x5728;&#x4FAE;&#x8FB1;&#x4ED6;&#x4EEC;&#x9AD8;&#x7EA7;&#x8BBE;&#x8BA1;&#x5E08;&#x7684;&#x79F0;&#x53F7;&#x554A;&#xFF01;&#x4E0D;&#x8FC7;&#x597D;&#x5728;&#x8FD9;&#x65F6;&#x5019;&#x6709;&#x4E86;<a href="https://link.juejin.im/?target=http%3A%2F%2Ficonfont.cn%2F" target="_blank">iconfont</a> &#x3002;</p>
+<p><strong>iconfont</strong>
+&#x4E00;&#x4E2A;&#x963F;&#x91CC;&#x7238;&#x7238;&#x505A;&#x7684;&#x5F00;&#x6E90;&#x56FE;&#x5E93;&#xFF0C;&#x4ED6;&#x7684;&#x56FE;&#x6807;&#x6570;&#x91CF;&#x8FD8;&#x662F;&#x5F88;&#x60CA;&#x4EBA;&#x7684;&#xFF0C;&#x4E0D;&#x4EC5;&#x6709;&#x51E0;&#x767E;&#x4E2A;&#x516C;&#x53F8;&#x7684;&#x5F00;&#x6E90;&#x56FE;&#x6807;&#x5E93;&#xFF0C;&#x8FD8;&#x6709;&#x5404;&#x5F0F;&#x5404;&#x6837;&#x7684;&#x5C0F;&#x56FE;&#x6807;&#xFF0C;&#x8FD8;&#x652F;&#x6301;&#x81EA;&#x5B9A;&#x4E49;&#x521B;&#x5EFA;&#x56FE;&#x6807;&#x5E93;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x7BA1;&#x4F60;&#x662F;&#x4E00;&#x5BB6;&#x521B;&#x4E1A;&#x516C;&#x53F8;&#x8FD8;&#x662F;&#x5BF9;&#x8BBE;&#x8BA1;&#x5F88;&#x6709;&#x8981;&#x6C42;&#x7684;&#x516C;&#x53F8;&#xFF0C;&#x5B83;&#x90FD;&#x80FD;&#x5F88;&#x597D;&#x7684;&#x5E2E;&#x52A9;&#x4F60;&#x89E3;&#x51B3;&#x7BA1;&#x7406;&#x56FE;&#x6807;&#x7684;&#x75DB;&#x70B9;&#x3002;&#x4F60;&#x60F3;&#x8981;&#x7684;&#x57FA;&#x672C;&#x90FD;&#x6709;~</p>
+<p><img src="http://ww1.sinaimg.cn/large/005QDhBjgy1fm9eyhmg1hj303k03k0sj.jpg" alt=""></p>
+<h2 id="iconfont-&#x4E09;&#x79CD;&#x4F7F;&#x7528;">iconfont &#x4E09;&#x79CD;&#x4F7F;&#x7528;</h2>
+<h3 id="unicode">unicode</h3>
+<p>&#x6700;&#x5F00;&#x59CB;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E86;<code>unicode</code>&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x5B83;&#x4E3B;&#x8981;&#x7684;&#x7279;&#x70B9;&#x662F;
+<strong>&#x4F18;&#x52BF;</strong></p>
+<ul>
+<li>&#x517C;&#x5BB9;&#x6027;&#x6700;&#x597D;&#xFF0C;&#x652F;&#x6301;ie6+</li>
+<li>&#x652F;&#x6301;&#x6309;&#x5B57;&#x4F53;&#x7684;&#x65B9;&#x5F0F;&#x53BB;&#x52A8;&#x6001;&#x8C03;&#x6574;&#x56FE;&#x6807;&#x5927;&#x5C0F;&#xFF0C;&#x989C;&#x8272;&#x7B49;&#x7B49;</li>
+</ul>
+<p><strong>&#x52A3;&#x52BF;</strong></p>
+<ul>
+<li>&#x4E0D;&#x652F;&#x6301;&#x591A;&#x8272;&#x56FE;&#x6807;</li>
+<li>&#x5728;&#x4E0D;&#x540C;&#x7684;&#x8BBE;&#x5907;&#x6D4F;&#x89C8;&#x5668;&#x5B57;&#x4F53;&#x7684;&#x6E32;&#x67D3;&#x4F1A;&#x7565;&#x6709;&#x5DEE;&#x522B;&#xFF0C;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x6216;&#x7CFB;&#x7EDF;&#x4E2D;&#x5BF9;&#x6587;&#x5B57;&#x7684;&#x6E32;&#x67D3;&#x4E0D;&#x540C;&#xFF0C;&#x5176;&#x663E;&#x793A;&#x7684;&#x4F4D;&#x7F6E;&#x548C;&#x5927;&#x5C0F;&#x53EF;&#x80FD;&#x4F1A;&#x53D7;&#x5230;font-size&#x3001;line-height&#x3001;word-spacing&#x7B49;CSS&#x5C5E;&#x6027;&#x7684;&#x5F71;&#x54CD;&#xFF0C;&#x800C;&#x4E14;&#x8FD9;&#x79CD;&#x5F71;&#x54CD;&#x8C03;&#x6574;&#x8D77;&#x6765;&#x8F83;&#x4E3A;&#x56F0;&#x96BE;</li>
+</ul>
+<p><strong>&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#xFF1A;</strong>
+&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x5F15;&#x5165;&#x81EA;&#x5B9A;&#x4E49;&#x5B57;&#x4F53; `font-face</p>
+<pre><code> @font-face {
+   font-family: &quot;iconfont&quot;;
+   src: url(&apos;iconfont.eot&apos;); /* IE9*/
+   src: url(&apos;iconfont.eot#iefix&apos;) format(&apos;embedded-opentype&apos;), /* IE6-IE8 */
+   url(&apos;iconfont.woff&apos;) format(&apos;woff&apos;), /* chrome, firefox */
+   url(&apos;iconfont.ttf&apos;) format(&apos;truetype&apos;), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+   url(&apos;iconfont.svg#iconfont&apos;) format(&apos;svg&apos;); /* iOS 4.1- */
+ }
+</code></pre><p>&#x7B2C;&#x4E8C;&#x6B65;&#xFF1A;&#x5B9A;&#x4E49;&#x4F7F;&#x7528;iconfont&#x7684;&#x6837;&#x5F0F;</p>
+<pre><code>.iconfont {
+  font-family:&quot;iconfont&quot; !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+</code></pre><p>&#x7B2C;&#x4E09;&#x6B65;&#xFF1A;&#x6311;&#x9009;&#x76F8;&#x5E94;&#x56FE;&#x6807;&#x5E76;&#x83B7;&#x53D6;&#x5B57;&#x4F53;&#x7F16;&#x7801;&#xFF0C;&#x5E94;&#x7528;&#x4E8E;&#x9875;&#x9762;</p>
+<pre><code>&lt;i class=&quot;iconfont&quot;&gt;&amp;#xe604;&lt;/i&gt;
+</code></pre><p>&#x6548;&#x679C;&#x56FE;&#xFF1A;</p>
+<p><img src="http://ww1.sinaimg.cn/large/005QDhBjgy1fm9ezkqbx7j310w080q52.jpg" alt=""></p>
+<p>&#x5176;&#x5B9E;&#x5B83;&#x7684;&#x539F;&#x7406;&#x4E5F;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x5C31;&#x662F;&#x901A;&#x8FC7; <code>@font-face</code> &#x5F15;&#x5165;&#x81EA;&#x5B9A;&#x4E49;&#x5B57;&#x4F53;(&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x4F53;&#x5E93;)&#xFF0C;&#x5B83;&#x91CC;&#x9762;&#x89C4;&#x5B9A;&#x4E86;<code>&amp;#xe604</code> &#x8FD9;&#x4E2A;&#x5BF9;&#x5E94;&#x7684;&#x5F62;&#x72B6;&#x5C31;&#x957F;&#x8FD9;&#x4F01;&#x9E45;&#x6837;&#x3002;&#x4E0D;&#x8FC7;&#x5B83;&#x7684;&#x7F3A;&#x70B9;&#x4E5F;&#x663E;&#x800C;&#x6613;&#x89C1;&#xFF0C;<code>unicode</code>&#x7684;&#x4E66;&#x5199;&#x4E0D;&#x76F4;&#x89C2;&#xFF0C;&#x8BED;&#x610F;&#x4E0D;&#x660E;&#x786E;&#x3002;&#x5149;&#x770B;<code>&amp;#xe604;</code>&#x8FD9;&#x4E2A;<code>unicode</code>&#x4F60;&#x5B8C;&#x5168;&#x4E0D;&#x77E5;&#x9053;&#x5B83;&#x4EE3;&#x8868;&#x7684;&#x662F;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#x3002;&#x8FD9;&#x65F6;&#x5019;&#x5C31;&#x6709;&#x4E86; <code>font-class</code>&#x3002;</p>
+<h3 id="font-class">font-class</h3>
+<p>&#x4E0E;unicode&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x76F8;&#x6BD4;&#xFF0C;&#x5177;&#x6709;&#x5982;&#x4E0B;&#x7279;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x517C;&#x5BB9;&#x6027;&#x826F;&#x597D;&#xFF0C;&#x652F;&#x6301;ie8+</li>
+<li>&#x76F8;&#x6BD4;&#x4E8E;unicode&#x8BED;&#x610F;&#x660E;&#x786E;&#xFF0C;&#x4E66;&#x5199;&#x66F4;&#x76F4;&#x89C2;&#x3002;&#x53EF;&#x4EE5;&#x5F88;&#x5BB9;&#x6613;&#x5206;&#x8FA8;&#x8FD9;&#x4E2A;icon&#x662F;&#x4EC0;&#x4E48;&#x3002;</li>
+</ul>
+<p><strong>&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#xFF1A;</strong>
+&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x62F7;&#x8D1D;&#x9879;&#x76EE;&#x4E0B;&#x9762;&#x751F;&#x6210;&#x7684;fontclass&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>../font_8d5l8fzk5b87iudi.css
+</code></pre><p>&#x7B2C;&#x4E8C;&#x6B65;&#xFF1A;&#x6311;&#x9009;&#x76F8;&#x5E94;&#x56FE;&#x6807;&#x5E76;&#x83B7;&#x53D6;&#x7C7B;&#x540D;&#xFF0C;&#x5E94;&#x7528;&#x4E8E;&#x9875;&#x9762;&#xFF1A;</p>
+<pre><code>&lt;i class=&quot;iconfont icon-xxx&quot;&gt;&lt;/i&gt;
+</code></pre><p>&#x6548;&#x679C;&#x56FE;&#xFF1A;</p>
+<p><img src="http://ww1.sinaimg.cn/large/005QDhBjgy1fm9eztfkynj310s074wgu.jpg" alt=""></p>
+<p>&#x5B83;&#x7684;&#x4E3B;&#x8981;&#x539F;&#x7406;&#x5176;&#x5B9E;&#x662F;&#x548C; <code>unicode</code> &#x4E00;&#x6837;&#x7684;&#xFF0C;&#x5B83;&#x53EA;&#x662F;&#x591A;&#x505A;&#x4E86;&#x4E00;&#x6B65;&#xFF0C;&#x5C06;&#x539F;&#x5148;<code>&amp;#xe604</code>&#x8FD9;&#x79CD;&#x5199;&#x6CD5;&#x6362;&#x6210;&#x4E86;<code>.icon-QQ</code>&#xFF0C;&#x5B83;&#x5728;&#x6BCF;&#x4E2A; class &#x7684; before &#x5C5E;&#x6027;&#x4E2D;&#x5199;&#x4E86;<code>unicode</code>,&#x7701;&#x53BB;&#x4E86;&#x4EBA;&#x4E3A;&#x5199;&#x7684;&#x9EBB;&#x70E6;&#x3002;&#x5982; <code>.icon-QQ:before { content: &quot;\e604&quot;; }</code></p>
+<p>&#x76F8;&#x5BF9;&#x4E8E;<code>unicode</code> &#x5B83;&#x7684;&#x4FEE;&#x6539;&#x66F4;&#x52A0;&#x7684;&#x65B9;&#x4FBF;&#x4E0E;&#x76F4;&#x89C2;&#x3002;</p>
+<h3 id="symbol">symbol</h3>
+<p>&#x968F;&#x7740;&#x4E07;&#x6076;&#x7684;&#x67D0;&#x67D0;&#x6D4F;&#x89C8;&#x5668;&#x9010;&#x6E10;&#x6DE1;&#x51FA;&#x5386;&#x53F2;&#x821E;&#x53F0;&#xFF0C;svg-icon &#x4F7F;&#x7528;&#x5F62;&#x5F0F;&#x6162;&#x6162;&#x6210;&#x4E3A;&#x4E3B;&#x6D41;&#x548C;&#x63A8;&#x8350;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x76F8;&#x5173;&#x6587;&#x7AE0;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x5F20;&#x946B;&#x65ED;&#x5927;&#x5927;&#x7684;&#x6587;&#x7AE0;<a href="https://link.juejin.im/?target=http%3A%2F%2Fwww.zhangxinxu.com%2Fwordpress%2F2014%2F07%2Fintroduce-svg-sprite-technology%2F%3Fspm%3Da313x.7781069.1998910419.50" target="_blank">&#x672A;&#x6765;&#x5FC5;&#x70ED;&#xFF1A;SVG Sprite&#x6280;&#x672F;&#x4ECB;&#x7ECD;</a></p>
+<ul>
+<li>&#x652F;&#x6301;&#x591A;&#x8272;&#x56FE;&#x6807;&#x4E86;&#xFF0C;&#x4E0D;&#x518D;&#x53D7;&#x5355;&#x8272;&#x9650;&#x5236;&#x3002;</li>
+<li>&#x652F;&#x6301;&#x50CF;&#x5B57;&#x4F53;&#x90A3;&#x6837;&#x901A;&#x8FC7;font-size,color&#x6765;&#x8C03;&#x6574;&#x6837;&#x5F0F;&#x3002;</li>
+<li>&#x652F;&#x6301; ie9+</li>
+<li>&#x53EF;&#x5229;&#x7528;CSS&#x5B9E;&#x73B0;&#x52A8;&#x753B;&#x3002;</li>
+<li>&#x51CF;&#x5C11;HTTP&#x8BF7;&#x6C42;&#x3002;</li>
+<li>&#x77E2;&#x91CF;&#xFF0C;&#x7F29;&#x653E;&#x4E0D;&#x5931;&#x771F;</li>
+<li>&#x53EF;&#x4EE5;&#x5F88;&#x7CBE;&#x7EC6;&#x7684;&#x63A7;&#x5236;SVG&#x56FE;&#x6807;&#x7684;&#x6BCF;&#x4E00;&#x90E8;&#x5206;</li>
+</ul>
+<h3 id="svg&#x517C;&#x5BB9;">svg&#x517C;&#x5BB9;</h3>
+<p><img src="http://ww1.sinaimg.cn/large/005QDhBjgy1fm9f0a03t0j31sw10w10u.jpg" alt=""></p>
+<p><strong>&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#xFF1A;</strong>
+&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x62F7;&#x8D1D;&#x9879;&#x76EE;&#x4E0B;&#x9762;&#x751F;&#x6210;&#x7684;symbol&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>&#x5F15;&#x5165;  ./iconfont.js
+</code></pre><p>&#x7B2C;&#x4E8C;&#x6B65;&#xFF1A;&#x52A0;&#x5165;&#x901A;&#x7528;css&#x4EE3;&#x7801;&#xFF08;&#x5F15;&#x5165;&#x4E00;&#x6B21;&#x5C31;&#x884C;&#xFF09;&#xFF1A;</p>
+<pre><code>&lt;style type=&quot;text/css&quot;&gt;
+    .icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }
+&lt;/style&gt;
+</code></pre><p>&#x7B2C;&#x4E09;&#x6B65;&#xFF1A;&#x6311;&#x9009;&#x76F8;&#x5E94;&#x56FE;&#x6807;&#x5E76;&#x83B7;&#x53D6;&#x7C7B;&#x540D;&#xFF0C;&#x5E94;&#x7528;&#x4E8E;&#x9875;&#x9762;&#xFF1A;</p>
+<pre><code>&lt;svg class=&quot;icon&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;use xlink:href=&quot;#icon-xxx&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;
+</code></pre><p>&#x4F7F;&#x7528;svg-icon&#x7684;&#x597D;&#x5904;&#x662F;&#x6211;&#x518D;&#x4E5F;&#x4E0D;&#x7528;&#x53D1;&#x9001;<code>woff|eot|ttf|</code> &#x8FD9;&#x4E9B;&#x5F88;&#x591A;&#x4E2A;&#x5B57;&#x4F53;&#x5E93;&#x8BF7;&#x6C42;&#x4E86;&#xFF0C;&#x6211;&#x6240;&#x6709;&#x7684;svg&#x90FD;&#x53EF;&#x4EE5;&#x5185;&#x8054;&#x5728;html&#x5185;&#x3002;</p>
+<p><img src="http://ww1.sinaimg.cn/large/005QDhBjgy1fm9f0ut80wj31160m21kx.jpg" alt=""></p>
+<p>&#x672A;&#x6765;&#x5FC5;&#x70ED;&#xFF1A;SVG Sprite&#x6280;&#x672F;&#x4ECB;&#x7ECD;</p>
+<h3 id="&#x4F7F;&#x7528;-svg-sprite">&#x4F7F;&#x7528; svg-sprite</h3>
+<pre><code class="lang-javascript">&lt;template&gt;
+  &lt;svg class=&quot;svg-icon&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;use :xlink:href=&quot;iconName&quot;&gt;&lt;/use&gt;
+  &lt;/svg&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  name: &apos;icon-svg&apos;,
+  props: {
+    iconClass: {
+      type: String,
+      required: true
+    }
+  },
+  computed: {
+    iconName() {
+      return `#icon-${this.iconClass}`
+    }
+  }
+}
+&lt;/script&gt;
+
+&lt;style&gt;
+.svg-icon {
+  width: 5rem;
+  height: 5rem;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+&lt;/style&gt;
+</code></pre>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x5C31;&#x8981;&#x81EA;&#x5DF1;&#x6765;&#x5236;&#x4F5C; <code>svg-sprite</code> &#x4E86;&#x3002;&#x8FD9;&#x91CC;&#x8981;&#x4F7F;&#x7528;&#x5230; <a href="https://link.juejin.im/?target=https%3A%2F%2Fgithub.com%2Fkisenka%2Fsvg-sprite-loader" target="_blank">svg-sprite-loader</a> &#x8FD9;&#x4E2A;&#x795E;&#x5668;&#x4E86;&#xFF0C; &#x5B83;&#x662F;&#x4E00;&#x4E2A; webpack loader &#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x591A;&#x4E2A; svg &#x6253;&#x5305;&#x6210; <code>svg-sprite</code> &#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x6765;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x5728; <code>vue-cli</code> &#x7684;&#x57FA;&#x7840;&#x4E0A;&#x8FDB;&#x884C;&#x6539;&#x9020;&#xFF0C;&#x52A0;&#x5165; <code>svg-sprite-loader</code>&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53D1;&#x73B0;<code>vue-cli</code>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x4F1A;&#x4F7F;&#x7528; <code>url-loader</code> &#x5BF9;svg&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF0C;&#x4F1A;&#x5C06;&#x5B83;&#x653E;&#x5728;<code>/img</code> &#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x5F15;&#x5165;<code>svg-sprite-loader</code> &#x4F1A;&#x5F15;&#x53D1;&#x4E00;&#x4E9B;&#x51B2;&#x7A81;&#x3002;</p>
+<pre><code>//&#x9ED8;&#x8BA4;`vue-cli` &#x5BF9;svg&#x505A;&#x7684;&#x5904;&#x7406;&#xFF0C;&#x6B63;&#x5219;&#x5339;&#x914D;&#x540E;&#x7F00;&#x540D;&#x4E3A;.svg&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5339;&#x914D;&#x6210;&#x529F;&#x4E4B;&#x540E;&#x4F7F;&#x7528; url-loader &#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;
+ {
+    test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+    loader: &apos;url-loader&apos;,
+    options: {
+      limit: 10000,
+      name: utils.assetsPath(&apos;img/[name].[hash:7].[ext]&apos;)
+    }
+}
+</code></pre><p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x6709;&#x4E24;&#x79CD;&#xFF0C;&#x6700;&#x7B80;&#x5355;&#x7684;&#x5C31;&#x662F;&#x4F60;&#x53EF;&#x4EE5;&#x5C06; test &#x7684; svg &#x53BB;&#x6389;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x4E0D;&#x4F1A;&#x5BF9;svg&#x505A;&#x5904;&#x7406;&#x4E86;&#xFF0C;&#x5F53;&#x7136;&#x8FD9;&#x6837;&#x505A;&#x662F;&#x5F88;&#x4E0D;&#x53CB;&#x5584;&#x7684;&#x3002;</p>
+<ul>
+<li>&#x4F60;&#x4E0D;&#x80FD;&#x4FDD;&#x8BC1;&#x4F60;&#x6240;&#x6709;&#x7684; svg &#x90FD;&#x662F;&#x7528;&#x6765;&#x5F53;&#x505A; icon&#x7684;&#xFF0C;&#x6709;&#x4E9B;&#x771F;&#x7684;&#x53EF;&#x80FD;&#x53EA;&#x662F;&#x7528;&#x6765;&#x5F53;&#x505A;&#x56FE;&#x7247;&#x8D44;&#x6E90;&#x7684;&#x3002;</li>
+<li>&#x4E0D;&#x80FD;&#x786E;&#x4FDD;&#x4F60;&#x4F7F;&#x7528;&#x7684;&#x4E00;&#x4E9B;&#x7B2C;&#x4E09;&#x65B9;&#x7C7B;&#x5E93;&#x4F1A;&#x4F7F;&#x7528;&#x5230; svg&#x3002;</li>
+</ul>
+<p>&#x6240;&#x4EE5;&#x6700;&#x5B89;&#x5168;&#x5408;&#x7406;&#x7684;&#x505A;&#x6CD5;&#x662F;&#x4F7F;&#x7528; webpack &#x7684; <a href="https://link.juejin.im/?target=https%3A%2F%2Fwebpack.js.org%2Fconfiguration%2Fmodule%2F%23rule-exclude" target="_blank">exclude</a> &#x548C; <a href="https://link.juejin.im/?target=https%3A%2F%2Fwebpack.js.org%2Fconfiguration%2Fmodule%2F%23rule-include" target="_blank">include</a> &#xFF0C;&#x8BA9;<code>svg-sprite-loader</code>&#x53EA;&#x5904;&#x7406;&#x4F60;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x9762;&#x7684; svg&#xFF0C;<code>url-loaer</code>&#x53EA;&#x5904;&#x7406;&#x9664;&#x6B64;&#x6587;&#x4EF6;&#x5939;&#x4E4B;&#x5916;&#x7684;&#x6240;&#x4EE5; svg&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x5B8C;&#x7F8E;&#x89E3;&#x51B3;&#x4E86;&#x4E4B;&#x524D;&#x51B2;&#x7A81;&#x7684;&#x95EE;&#x9898;&#x3002;
+&#x4EE3;&#x7801;&#x5982;&#x4E0B;</p>
+<p><img src="http://ww1.sinaimg.cn/large/005QDhBjgy1fm9f140llhj30r40h2wmg.jpg" alt=""></p>
+<p>&#x8FD9;&#x6837;&#x914D;&#x7F6E;&#x597D;&#x4E86;&#xFF0C;&#x53EA;&#x8981;&#x5F15;&#x5165;svg&#x4E4B;&#x540E;&#x586B;&#x5199;&#x7C7B;&#x540D;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;</p>
+<pre><code>import &apos;@/src/icons/qq.svg; //&#x5F15;&#x5165;&#x56FE;&#x6807;
+
+&lt;svg&gt;&lt;use xlink:href=&quot;#qq&quot; /&gt;&lt;/svg&gt;  //&#x4F7F;&#x7528;&#x56FE;&#x6807;
+</code></pre><p>&#x5355;&#x8FD9;&#x6837;&#x8FD8;&#x662F;&#x975E;&#x5E38;&#x7684;&#x4E0D;&#x4F18;&#x96C5;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x9879;&#x76EE;&#x4E2D;&#x6709;&#x4E00;&#x767E;&#x4E2A; icon&#xFF0C;&#x96BE;&#x4E0D;&#x6210;&#x6211;&#x8981;&#x624B;&#x52A8;&#x4E00;&#x4E2A;&#x4E2A;&#x5F15;&#x5165;&#x4E48;&#xFF01; <strong>&#x5077;&#x61D2;&#x662F;&#x7A0B;&#x5E8F;&#x5458;&#x7684;&#x7B2C;&#x4E00;&#x751F;&#x4EA7;&#x529B;&#xFF01;&#xFF01;&#xFF01;</strong></p>
+<h2 id="&#x81EA;&#x52A8;&#x5BFC;&#x5165;">&#x81EA;&#x52A8;&#x5BFC;&#x5165;</h2>
+<p>&#x9996;&#x5148;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4E13;&#x95E8;&#x653E;&#x7F6E;&#x56FE;&#x6807; icon &#x7684;&#x6587;&#x4EF6;&#x5939;&#x5982;&#xFF1A;<code>@/src/icons</code>&#xFF0C;&#x5C06;&#x6240;&#x6709; icon &#x653E;&#x5728;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x3002;
+&#x4E4B;&#x540E;&#x6211;&#x4EEC;&#x5C31;&#x8981;&#x4F7F;&#x7528;&#x5230; webpack &#x7684; <a href="https://link.juejin.im/?target=https%3A%2F%2Fwebpack.js.org%2Fguides%2Fdependency-management%2F%23require-context" target="_blank">require.context</a>&#x3002;&#x5F88;&#x591A;&#x4EBA;&#x5BF9;&#x4E8E; <code>require.context</code>&#x53EF;&#x80FD;&#x6BD4;&#x8F83;&#x964C;&#x751F;&#xFF0C;&#x76F4;&#x767D;&#x7684;&#x89E3;&#x91CA;&#x5C31;&#x662F;</p>
+<blockquote>
+<p>require.context(&quot;./test&quot;, false, /.test.js$/);
+&#x8FD9;&#x884C;&#x4EE3;&#x7801;&#x5C31;&#x4F1A;&#x53BB; test &#x6587;&#x4EF6;&#x5939;&#xFF08;&#x4E0D;&#x5305;&#x542B;&#x5B50;&#x76EE;&#x5F55;&#xFF09;&#x4E0B;&#x9762;&#x7684;&#x627E;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x540D;&#x4EE5; <code>.test.js</code> &#x7ED3;&#x5C3E;&#x7684;&#x6587;&#x4EF6;&#x80FD;&#x88AB; require &#x7684;&#x6587;&#x4EF6;&#x3002;
+&#x66F4;&#x76F4;&#x767D;&#x7684;&#x8BF4;&#x5C31;&#x662F; &#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6B63;&#x5219;&#x5339;&#x914D;&#x5F15;&#x5165;&#x76F8;&#x5E94;&#x7684;&#x6587;&#x4EF6;&#x6A21;&#x5757;&#x3002;</p>
+</blockquote>
+<p>require.context&#x6709;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;</p>
+<ul>
+<li>directory&#xFF1A;&#x8BF4;&#x660E;&#x9700;&#x8981;&#x68C0;&#x7D22;&#x7684;&#x76EE;&#x5F55;</li>
+<li>useSubdirectories&#xFF1A;&#x662F;&#x5426;&#x68C0;&#x7D22;&#x5B50;&#x76EE;&#x5F55;</li>
+<li>regExp: &#x5339;&#x914D;&#x6587;&#x4EF6;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;</li>
+</ul>
+<p>&#x4E86;&#x89E3;&#x8FD9;&#x4E9B;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x5199;&#x6765;&#x81EA;&#x52A8;&#x5F15;&#x5165; <code>@/src/icons</code> &#x4E0B;&#x9762;&#x6240;&#x6709;&#x7684;&#x56FE;&#x6807;&#x4E86;</p>
+<pre><code>const requireAll = requireContext =&gt; requireContext.keys().map(requireContext)
+const req = require.context(&apos;./svg&apos;, false, /\.svg$/)
+requireAll(req)
+</code></pre><p>&#x4E4B;&#x540E;&#x6211;&#x4EEC;&#x589E;&#x5220;&#x6539;&#x56FE;&#x6807;&#x76F4;&#x63A5;&#x76F4;&#x63A5;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x5BF9;&#x5E94;&#x7684;&#x56FE;&#x6807;&#x5C31;&#x597D;&#x4E86;&#xFF0C;&#x4EC0;&#x4E48;&#x90FD;&#x4E0D;&#x7528;&#x7BA1;&#xFF0C;&#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x751F;&#x6210; <code>svg symbol</code>&#x4E86;&#x3002;</p>
+<p><img src="http://ww1.sinaimg.cn/large/005QDhBjgy1fm9f1du3m3j31ti088ajc.jpg" alt=""></p>
+<h2 id="&#x66F4;&#x8FDB;&#x4E00;&#x6B65;&#x4F18;&#x5316;&#x81EA;&#x5DF1;&#x7684;svg">&#x66F4;&#x8FDB;&#x4E00;&#x6B65;&#x4F18;&#x5316;&#x81EA;&#x5DF1;&#x7684;svg</h2>
+<p>&#x9996;&#x5148;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E00;&#x4E0B; &#x4ECE; <code>&#x963F;&#x91CC;iconfont</code> &#x7F51;&#x7AD9;&#x4E0A;&#x5BFC;&#x51FA;&#x7684; svg &#x957F;&#x4EC0;&#x4E48;&#x6837;&#xFF1F;</p>
+<p><img src="http://ww1.sinaimg.cn/large/005QDhBjgy1fm9f2gpm3kj31z20h0u0x.jpg" alt=""></p>
+<p>&#x6CA1;&#x9519;&#x867D;&#x7136; iconfont &#x7F51;&#x7AD9;&#x5BFC;&#x51FA;&#x7684; svg &#x5185;&#x5BB9;&#x5DF2;&#x7ECF;&#x7B97;&#x86EE;&#x7CBE;&#x7B80;&#x7684;&#x4E86;&#xFF0C;&#x4F46;&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#x5176;&#x5B9E;&#x8FD8;&#x662F;&#x4E0E;&#x5F88;&#x591A;&#x65E0;&#x7528;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x9020;&#x6210;&#x4E86;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x5197;&#x4F59;&#x3002;&#x5C31;&#x8FDE; iconfont &#x7F51;&#x7AD9;&#x5BFC;&#x51FA;&#x7684; svg &#x90FD;&#x8FD9;&#x6837;&#xFF0C;&#x66F4;&#x4E0D;&#x7528;&#x8BF4;&#x90A3;&#x4E9B;&#x66F4;&#x5728;&#x610F; ui&#x6F02;&#x4E0D;&#x6F02;&#x4EAE;&#x4E0D;&#x61C2;&#x6280;&#x672F;&#x7684;&#x8BBE;&#x8BA1;&#x5E08;&#x4E86;(&#x53EF;&#x80FD;)&#x5BFC;&#x51FA;&#x7684;svg&#x4E86;&#x3002;&#x597D;&#x5728; <code>svg-sprite-loader</code>&#x4E5F;&#x8003;&#x8651;&#x5230;&#x4E86;&#x8FD9;&#x70B9;&#xFF0C;&#x5B83;&#x76EE;&#x524D;&#x53EA;&#x4F1A;&#x83B7;&#x53D6; svg &#x4E2D; path &#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x800C;&#x5176;&#x5B83;&#x7684;&#x4FE1;&#x606F;&#x4E00;&#x6982;&#x4E0D;&#x4F1A;&#x83B7;&#x53D6;&#x3002;&#x751F;&#x6210; svg &#x5982;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<p><img src="http://ww1.sinaimg.cn/large/005QDhBjgy1fm9f2q1wtsj31te06odle.jpg" alt=""></p>
+<p>&#x4F46;&#x4EFB;&#x4F55;&#x4F60;&#x5728; path &#x4E2D;&#x4EA7;&#x751F;&#x7684;&#x5197;&#x4F59;&#x4FE1;&#x606F;&#x5B83;&#x5C31;&#x4E0D;&#x4F1A;&#x505A;&#x5904;&#x7406;&#x4E86;&#x3002;&#x5982;&#x6CE8;&#x91CA;&#x4EC0;&#x4E48;&#x7684;</p>
+<p><img src="http://ww1.sinaimg.cn/large/005QDhBjgy1fm9f2y6e07j310606uako.jpg" alt=""></p>
+<p>&#x8FD9;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x5C31;&#x8981;&#x4F7F;&#x7528;&#x53E6;&#x4E00;&#x4E2A;&#x5F88;&#x597D;&#x7528;&#x7684;&#x4E1C;&#x897F;&#x4E86;-- <a href="https://link.juejin.im/?target=https%3A%2F%2Fgithub.com%2Fsvg%2Fsvgo" target="_blank">svgo</a></p>
+<blockquote>
+<p>SVG files, especially exported from various editors, usually contain a lot of redundant and useless information such as editor metadata, comments, hidden elements, default or non-optimal values and other stuff that can be safely removed or converted without affecting SVG rendering result.</p>
+</blockquote>
+<p>&#x5B83;&#x652F;&#x6301;&#x51E0;&#x5341;&#x79CD;&#x4F18;&#x5316;&#x9879;&#xFF0C;&#x975E;&#x5E38;&#x7684;&#x5F3A;&#x5927;&#xFF0C;8k+&#x7684;star &#x4E5F;&#x8DB3;&#x4EE5;&#x8BF4;&#x660E;&#x4E86;&#x95EE;&#x9898;&#x3002;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="charles教程.html" class="navigation navigation-prev " aria-label="Previous page: charles教程">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="监控系统.html" class="navigation navigation-next " aria-label="Next page: 前端页面错误监控系统">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ICON-svg的实现形式","level":"1.4.5","depth":2,"next":{"title":"前端页面错误监控系统","level":"1.4.6","depth":2,"path":"教程培训/监控系统.md","ref":"教程培训/监控系统.md","articles":[]},"previous":{"title":"charles教程","level":"1.4.4","depth":2,"path":"教程培训/charles教程.md","ref":"教程培训/charles教程.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"教程培训/ICON-svg的实现形式.md","mtime":"2018-01-23T05:10:44.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-23T05:13:30.214Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
